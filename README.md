@@ -46,43 +46,66 @@ Para compilar un archivo `.ipa` instalable sin tener una Mac:
 
 ---
 
-## 📥 Descarga e instalación en iPhone o iPad
+## 📥 Instalación obligatoria mediante AltStore Classic
 
-Descarga la versión más reciente desde [Releases](https://github.com/JORC14/ultrarig-ios-download/releases).
-El archivo `.ipa` se instala mediante *sideloading* en dispositivos compatibles.
+UltraRig debe instalarse mediante **AltStore Classic**. Descarga el archivo desde [Releases](https://github.com/JORC14/ultrarig-ios-download/releases).
 
-### Método 1: Sideloadly (Windows o Mac)
+### Requisitos
 
-1. Descarga e instala [Sideloadly](https://sideloadly.io/).
-2. Conecta el iPhone o iPad a la computadora mediante un cable USB.
-3. Abre Sideloadly y arrastra `UltraRig-ios.ipa` a la ventana.
-4. Introduce tu Apple ID y pulsa **Start**.
-5. En el dispositivo, abre **Ajustes > General > VPN y gestión de dispositivos**, selecciona tu Apple ID y pulsa **Confiar**.
+- iPhone o iPad compatible.
+- Una computadora Windows o Mac para la configuración inicial.
+- Un Apple ID.
+- **AltServer** instalado en la computadora.
+- El archivo `UltraRig-ios.ipa` descargado.
 
-### Método 2: AltStore
+### 1. Instalar AltServer
 
-1. Envía `UltraRig-ios.ipa` al iPhone o iPad mediante AirDrop, iCloud Drive u otro medio.
-2. Abre **AltStore**.
-3. En **My Apps**, pulsa **+** y selecciona el archivo `.ipa`.
+1. Descarga AltServer desde la [página oficial de AltStore](https://altstore.io/).
+2. En Windows, instala también iCloud y iTunes desde Apple, no las versiones de Microsoft Store.
+3. En Mac, abre AltServer y permite los componentes que solicite macOS.
+4. Ejecuta AltServer y deja su icono activo en la barra de tareas o barra de menús.
 
-### Método 3: TrollStore
+### 2. Instalar AltStore Classic en el iPhone
 
-1. Descarga el archivo `.ipa` desde Safari.
-2. Pulsa **Compartir > TrollStore**.
-3. Este método depende de que la versión de iOS sea compatible con TrollStore.
+1. Conecta el iPhone o iPad a la computadora con un cable USB.
+2. Desbloquea el dispositivo y pulsa **Confiar** si aparece el aviso.
+3. En Windows, abre iTunes y activa **Sincronizar con este iPhone mediante Wi‑Fi**. En Mac, activa **Mostrar este iPhone al usar Wi‑Fi** en Finder.
+4. Pulsa el icono de **AltServer**.
+5. Selecciona **Install AltStore > tu iPhone o iPad**.
+6. Introduce el Apple ID que se usará para firmar la aplicación.
+7. Espera a que AltStore aparezca en la pantalla de inicio.
 
-### Actualizar sin computadora después de la primera configuración
+### 3. Confiar en el desarrollador
 
-Para refrescar y volver a firmar aplicaciones directamente desde el iPhone, puedes usar **SideStore + LocalDevVPN**:
+1. En el iPhone abre **Ajustes > General > VPN y gestión de dispositivos**.
+2. Pulsa el perfil que muestra tu Apple ID.
+3. Pulsa **Confiar en [tu Apple ID]** y confirma.
+4. En iOS 16 o posterior, abre **Ajustes > Privacidad y seguridad > Modo desarrollador**, actívalo y reinicia el dispositivo si lo solicita.
 
-1. Realiza la instalación y el emparejamiento inicial de SideStore con una computadora.
-2. Instala **SideStore** y **LocalDevVPN** siguiendo la [guía oficial de SideStore](https://docs.sidestore.io/docs/installation/install.html).
-3. Abre **LocalDevVPN** y pulsa **Connect**.
-4. Abre **SideStore**, inicia sesión con el mismo Apple ID y entra en **My Apps**.
-5. Pulsa el contador **7 DAYS** para refrescar SideStore y las aplicaciones antes de que caduquen.
-6. Para actualizar UltraRig, importa el nuevo `UltraRig-ios.ipa` dentro de SideStore y pulsa **Install/Refresh**.
+### 4. Instalar UltraRig desde AltStore
 
-Después de la configuración inicial, SideStore puede instalar y refrescar aplicaciones desde el propio dispositivo usando LocalDevVPN, sin volver a conectar la computadora. La función de refresco automático de Sideloadly, en cambio, requiere que su daemon esté ejecutándose en una computadora; su modo Wi‑Fi evita el cable USB, pero no elimina esa computadora.
+1. Descarga `UltraRig-ios.ipa` desde el enlace de Releases.
+2. Pulsa **Compartir** y selecciona **AltStore**. También puedes guardar el archivo en **Archivos**.
+3. Abre **AltStore** y entra en **My Apps**.
+4. Pulsa el botón **+** de la esquina superior.
+5. Selecciona `UltraRig-ios.ipa` en la app **Archivos**.
+6. Introduce el Apple ID si AltStore lo solicita.
+7. Espera a que termine la firma y la instalación.
+8. Abre UltraRig desde la pantalla de inicio.
+
+### 5. Actualizar UltraRig
+
+1. Descarga la nueva versión `.ipa` desde Releases.
+2. Abre **AltStore > My Apps**.
+3. Pulsa **+** y selecciona el nuevo archivo.
+4. AltStore instalará la actualización sobre la versión anterior cuando uses el mismo Apple ID y el mismo identificador de aplicación.
+5. No borres la versión anterior antes de actualizar si quieres conservar los datos locales.
+
+### 6. Renovar la aplicación
+
+Con una cuenta Apple gratuita, las aplicaciones de AltStore normalmente caducan después de 7 días. Mantén AltServer abierto en la computadora y el iPhone en la misma red Wi‑Fi, o conectado por USB, y pulsa **Refresh All** en **AltStore > My Apps** antes de que caduque.
+
+Si necesitas refrescar aplicaciones directamente desde el iPhone sin tener la computadora disponible, usa SideStore + LocalDevVPN siguiendo su [guía oficial](https://docs.sidestore.io/docs/installation/install.html). Ese es un método distinto de AltStore Classic.
 
 ---
 
@@ -90,4 +113,4 @@ Después de la configuración inicial, SideStore puede instalar y refrescar apli
 
 Descarga la versión más reciente desde la sección [Releases](https://github.com/JORC14/ultrarig-ios-download/releases).
 
-El archivo `UltraRig-ios.ipa` puede instalarse para pruebas mediante AltStore, Sideloadly o TrollStore, según la firma disponible.
+El archivo `UltraRig-ios.ipa` debe instalarse mediante **AltStore Classic** siguiendo las instrucciones detalladas de este README.
