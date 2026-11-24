@@ -71,6 +71,19 @@ El archivo `.ipa` se instala mediante *sideloading* en dispositivos compatibles.
 2. Pulsa **Compartir > TrollStore**.
 3. Este método depende de que la versión de iOS sea compatible con TrollStore.
 
+### Actualizar sin computadora después de la primera configuración
+
+Para refrescar y volver a firmar aplicaciones directamente desde el iPhone, puedes usar **SideStore + LocalDevVPN**:
+
+1. Realiza la instalación y el emparejamiento inicial de SideStore con una computadora.
+2. Instala **SideStore** y **LocalDevVPN** siguiendo la [guía oficial de SideStore](https://docs.sidestore.io/docs/installation/install.html).
+3. Abre **LocalDevVPN** y pulsa **Connect**.
+4. Abre **SideStore**, inicia sesión con el mismo Apple ID y entra en **My Apps**.
+5. Pulsa el contador **7 DAYS** para refrescar SideStore y las aplicaciones antes de que caduquen.
+6. Para actualizar UltraRig, importa el nuevo `UltraRig-ios.ipa` dentro de SideStore y pulsa **Install/Refresh**.
+
+Después de la configuración inicial, SideStore puede instalar y refrescar aplicaciones desde el propio dispositivo usando LocalDevVPN, sin volver a conectar la computadora. La función de refresco automático de Sideloadly, en cambio, requiere que su daemon esté ejecutándose en una computadora; su modo Wi‑Fi evita el cable USB, pero no elimina esa computadora.
+
 ---
 
 ## 📦 Descargas públicas
