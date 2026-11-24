@@ -46,6 +46,33 @@ Para compilar un archivo `.ipa` instalable sin tener una Mac:
 
 ---
 
+## 📥 Descarga e instalación en iPhone o iPad
+
+Descarga la versión más reciente desde [Releases](https://github.com/JORC14/ultrarig-ios-download/releases).
+El archivo `.ipa` se instala mediante *sideloading* en dispositivos compatibles.
+
+### Método 1: Sideloadly (Windows o Mac)
+
+1. Descarga e instala [Sideloadly](https://sideloadly.io/).
+2. Conecta el iPhone o iPad a la computadora mediante un cable USB.
+3. Abre Sideloadly y arrastra `UltraRig-ios.ipa` a la ventana.
+4. Introduce tu Apple ID y pulsa **Start**.
+5. En el dispositivo, abre **Ajustes > General > VPN y gestión de dispositivos**, selecciona tu Apple ID y pulsa **Confiar**.
+
+### Método 2: AltStore
+
+1. Envía `UltraRig-ios.ipa` al iPhone o iPad mediante AirDrop, iCloud Drive u otro medio.
+2. Abre **AltStore**.
+3. En **My Apps**, pulsa **+** y selecciona el archivo `.ipa`.
+
+### Método 3: TrollStore
+
+1. Descarga el archivo `.ipa` desde Safari.
+2. Pulsa **Compartir > TrollStore**.
+3. Este método depende de que la versión de iOS sea compatible con TrollStore.
+
+---
+
 ## 📦 Descargas públicas
 
 Descarga la versión más reciente desde la sección [Releases](https://github.com/JORC14/ultrarig-ios-download/releases).
